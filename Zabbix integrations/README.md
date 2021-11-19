@@ -1,6 +1,6 @@
 # Available Integration with Zabbix Media Type
 
-### -  Netcool
+### <img src="https://www.orb-data.com/wp-content/uploads/2019/01/netcool.png" alt="alt text" width="80" height="80">  Netcool
 
 With this integration we use the postzmsg to send the events to Netcool enviroment. The follwoing file are use to do this integration:
 
