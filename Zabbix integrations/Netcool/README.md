@@ -1,8 +1,8 @@
 #  How to setup Netcool integration
-##### 1. Move repository files on / directory
-    mv eif.conf files.tar.gz postzmsg send2netcool.sh local.cache /
+##### 1. Move repository files on /usr/lib/zabbix/alertscripts/ directory
+    mv eif.conf files.tar.gz postzmsg send2netcool.sh local.cache /usr/lib/zabbix/alertscripts/
     
-#### 1.1 Add EIF probe data in eif.conf file on / directory
+#### 1.1 Add EIF probe data in eif.conf file on /usr/lib/zabbix/alertscripts/ directory
     ServerLocation=<eif probe IP Address>
     ServerPort=<eif probe port >
     EventMaxSize=4096
@@ -15,7 +15,7 @@
 #### 2. Create a New  Media Type script in Zabbix
 - Define Media type name
 - Select Media Type (script)
-- Define script name (Script send2netcool.sh had to be on / directory)
+- Define script name (Script send2netcool.sh had to be on /usr/lib/zabbix/alertscripts/ directory)
 - Add Script parameters ( {ALERT.MESSAGE} )
 
 ##### 2.2 Define Message types on Message templates
