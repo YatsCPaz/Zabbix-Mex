@@ -18,9 +18,8 @@
 - Define Media type name
 - Select Media Type (script)
 - Define script name (Script send2netcool.sh had to be on /usr/lib/zabbix/alertscripts/ directory)
-- Add Script parameters 
-    ALERT.MESSAGE
-    ##Cache file path
+- Add Script parameters
+    {ALERT.MESSAGE}
 
 ##### 2.2 Define Message types on Message templates
 ##### Create Problem message type
