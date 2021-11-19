@@ -2,6 +2,8 @@
 #### 1. Move repository files on /usr/lib/zabbix/alertscripts/ directory
     mv eif.conf files.tar.gz postzmsg send2netcool.sh local.cache /usr/lib/zabbix/alertscripts/
     
+   Note: Only decompress tar.gz file if you don't have libraries  to execute postzmsg already in your system
+    
 ##### 1.1 Add EIF probe data in eif.conf file on /usr/lib/zabbix/alertscripts/ directory
     ServerLocation=<eif probe IP Address>
     ServerPort=<eif probe port >
