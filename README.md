@@ -1,5 +1,5 @@
 # Zabbix-Mex
 
-## Introducción
+## Introduction
 
-En este proyecto se integra la solución de Zabbix para el monitoreo de diversos componentes.
+In this project we integrate Zabbix solution for the monitoring.
