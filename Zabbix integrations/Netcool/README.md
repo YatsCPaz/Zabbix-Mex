@@ -55,3 +55,10 @@
 
 **Note**: Recovery and Update fields are the same configuration
 
+#### 4. User configuration
+Add a new media on User configuration
+- Type: Netcool (Netcool Media type name)
+- Send to: <Name of new media>
+- When active: <days and hours> (1-7,00:00-24:00)
+- Use if Severity: <select severity>
+
