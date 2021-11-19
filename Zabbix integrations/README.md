@@ -10,6 +10,8 @@ With this integration we use the postzmsg to send the events to Netcool envirome
 - local.cache
 - send2netcool.sh (scrip to complie with GSMA rules)
 
+**Note:** All the files are in the Netcool folder.
+
 ### -  Slack
 
 With this integration we use the Slack Media type as a base to be able to send, update and close all slack messages.
