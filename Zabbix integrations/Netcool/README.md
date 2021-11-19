@@ -10,7 +10,7 @@
 - Subject can be empty (Problem: {EVENT.NAME})
 - Message option is use to add parameter into send2netcool.sh script with ALERT.MESSAGE object ( {HOST.NAME}|{HOST.IP}|{EVENT.NAME}|{INVENTORY.OS}|{TRIGGER.HOSTGROUP.NAME}|{ITEM.KEY}|{ITEM.VALUE}|{ITEM.NAME}|{TRIGGER.NAME}|Zabbix|{EVENT.NSEVERITY}|{EVENT.VALUE} )
 
-#### Create Problem recovery message type
+##### Create Problem recovery message type
 - Subject can be empty (Resolved in {EVENT.DURATION}: {EVENT.NAME})
 - Message option is use to add parameter into send2netcool.sh script with ALERT.MESSAGE object ( {HOST.NAME}|{HOST.IP}|{EVENT.NAME}|{INVENTORY.OS}|{TRIGGER.HOSTGROUP.NAME}|{ITEM.KEY}|{ITEM.VALUE}|{ITEM.NAME}|{TRIGGER.NAME}|Zabbix|{EVENT.NSEVERITY}|{EVENT.VALUE} )
 
