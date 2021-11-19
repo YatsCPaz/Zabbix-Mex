@@ -8,7 +8,7 @@ With this integration we use the postzmsg to send the events to Netcool envirome
 - eif.conf (configuration file)
 - libraries needed to execute postzmsg (example libfreebl3.so)
 - local.cache (Cache file)
-- send2netcool.sh (scrip to complie with GSMA rules)
+- send2netcool.sh (script to parse Zabbix data to EIF Probe)
 
 **Note:** All the files are in the Netcool folder.
 
