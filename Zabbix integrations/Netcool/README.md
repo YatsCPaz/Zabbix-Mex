@@ -1,4 +1,13 @@
 #  How to setup Netcool integration
+####1. Add EIF probe data in eif.conf file on / directory
+    ServerLocation=<eif probe IP Address>
+    ServerPort=<eif probe port >
+    EventMaxSize=4096
+    BufferEvents=YES
+    BufEvtMaxSize=1000
+	 ##Cache file path
+    BufEvtPath=/usr/lib/zabbix/alertscripts/local.cache
+  
 #### 1. Create a New  Media Type script in Zabbix
 - Define Media type name
 - Select Media Type (script)
