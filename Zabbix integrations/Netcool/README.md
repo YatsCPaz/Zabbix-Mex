@@ -1,8 +1,8 @@
-#  How to setup Netcool integration
-##### 1. Move repository files on /usr/lib/zabbix/alertscripts/ directory
+# :construction_worker: How to setup Netcool integration
+#### 1. Move repository files on /usr/lib/zabbix/alertscripts/ directory
     mv eif.conf files.tar.gz postzmsg send2netcool.sh local.cache /usr/lib/zabbix/alertscripts/
     
-#### 1.1 Add EIF probe data in eif.conf file on /usr/lib/zabbix/alertscripts/ directory
+##### 1.1 Add EIF probe data in eif.conf file on /usr/lib/zabbix/alertscripts/ directory
     ServerLocation=<eif probe IP Address>
     ServerPort=<eif probe port >
     EventMaxSize=4096
