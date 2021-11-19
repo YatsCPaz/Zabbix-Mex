@@ -19,15 +19,26 @@
 - Select Media Type (script)
 - Define script name (Script send2netcool.sh had to be on /usr/lib/zabbix/alertscripts/ directory)
 - Add Script parameters
-    {ALERT.MESSAGE}
+
+      {ALERT.MESSAGE}
 
 ##### 2.2 Define Message types on Message templates
 ##### Create Problem message type
-- Subject can be empty (Problem: {EVENT.NAME})
-- Message option is use to add parameter into send2netcool.sh script with ALERT.MESSAGE object ( {HOST.NAME}|{HOST.IP}|{EVENT.NAME}|{INVENTORY.OS}|{TRIGGER.HOSTGROUP.NAME}|{ITEM.KEY}|{ITEM.VALUE}|{ITEM.NAME}|{TRIGGER.NAME}|Zabbix|{EVENT.NSEVERITY}|{EVENT.VALUE} )
+- Subject can be empty 
+
+      Problem: {EVENT.NAME}
+      
+- Message option is use to add parameters into send2netcool.sh script with ALERT.MESSAGE object 
+
+      {HOST.NAME}|{HOST.IP}|{EVENT.NAME}|{INVENTORY.OS}|{TRIGGER.HOSTGROUP.NAME}|{ITEM.KEY}|{ITEM.VALUE}|{ITEM.NAME}|{TRIGGER.NAME}|Zabbix|{EVENT.NSEVERITY}|{EVENT.VALUE}
 
 ##### Create Problem recovery message type
-- Subject can be empty (Resolved in {EVENT.DURATION}: {EVENT.NAME})
-- Message option is use to add parameter into send2netcool.sh script with ALERT.MESSAGE object ( {HOST.NAME}|{HOST.IP}|{EVENT.NAME}|{INVENTORY.OS}|{TRIGGER.HOSTGROUP.NAME}|{ITEM.KEY}|{ITEM.VALUE}|{ITEM.NAME}|{TRIGGER.NAME}|Zabbix|{EVENT.NSEVERITY}|{EVENT.VALUE} )
+- Subject can be empty 
+      
+      Resolved in {EVENT.DURATION}: {EVENT.NAME}
+      
+- Message option is use to add parameter into send2netcool.sh script with ALERT.MESSAGE object 
+
+      {HOST.NAME}|{HOST.IP}|{EVENT.NAME}|{INVENTORY.OS}|{TRIGGER.HOSTGROUP.NAME}|{ITEM.KEY}|{ITEM.VALUE}|{ITEM.NAME}|{TRIGGER.NAME}|Zabbix|{EVENT.NSEVERITY}|{EVENT.VALUE} 
 
 #### 3. User
