@@ -60,5 +60,5 @@ Add a new media on User configuration
 - Type: Netcool (Netcool Media type name)
 - Send to: (Name of new media)
 - When active: (days and hours activity (1-7,00:00-24:00))
-- Use if Severity: <select severity>
+- Use if Severity: (select severity)
 
