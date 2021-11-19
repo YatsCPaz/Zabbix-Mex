@@ -12,7 +12,7 @@ With this integration we use the postzmsg to send the events to Netcool envirome
 
 **Note:** All the files are in the Netcool folder.
 
-### <img src="https://user-images.githubusercontent.com/4998725/51313627-50fc6400-1a4e-11e9-8cbe-7c40cc0bfe67.jpg" alt="alt text" width="20" height="20"> Slack
+### <img src="https://user-images.githubusercontent.com/4998725/51313627-50fc6400-1a4e-11e9-8cbe-7c40cc0bfe67.jpg" alt="alt text" width="20" height="20">  Slack
 
 With this integration we use the Slack Media type as a base to be able to send, update and close all slack messages.
 
