@@ -1,4 +1,4 @@
-# :tw-1f527: How to setup Netcool integration
+#  How to setup Netcool integration
 #### 1. Create a New  Media Type script in Zabbix
 - Define Media type name
 - Select Media Type (script)
