@@ -2,12 +2,12 @@
 
 ### <img src="https://www.orb-data.com/wp-content/uploads/2019/01/netcool.png" alt="alt text" width="50" height="50">  Netcool
 
-With this integration we use the postzmsg to send the events to Netcool enviroment. The follwoing file are use to do this integration:
+With this integration we use the postzmsg to send the events to Netcool enviroment. The following files has been use to do this integration:
 
 - postzmsg (binary)
 - eif.conf (configuration file)
 - libraries needed to execute postzmsg (example libfreebl3.so)
-- local.cache
+- local.cache (Cache file)
 - send2netcool.sh (scrip to complie with GSMA rules)
 
 **Note:** All the files are in the Netcool folder.
