@@ -50,15 +50,15 @@
 #### 3.2 Configure Operations Tab 
  In operations field add the following configuration
 - Operation type: Send message
-- Send to users: <default user admin>
-- Send only to: <Netcool Media type name>
+- Send to users: (default user admin)
+- Send only to: (Netcool Media type name)
 
 **Note**: Recovery and Update fields are the same configuration
 
 #### 4. User configuration
 Add a new media on User configuration
 - Type: Netcool (Netcool Media type name)
-- Send to: <Name of new media>
-- When active: <days and hours> (1-7,00:00-24:00)
+- Send to: (Name of new media)
+- When active: (days and hours activity (1-7,00:00-24:00))
 - Use if Severity: <select severity>
 
