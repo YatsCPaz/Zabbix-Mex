@@ -1,13 +1,9 @@
 ---
 # tasks file for zorka-install-was
-- name: Check previous installation
-  include_tasks: pre_req.yml
-
-- name: Get binary files
-  include_tasks: file_transfer.yml
-
-- name: Zorka Install
-  include_tasks: install.yml
-
-- name: Zorka Configure
-  include_tasks: configure.yml
+- name: Copy template config file
+  ansible.builtin.template:
+    src: zorka.properties.j2
+    dest: "{{ zorka_properties }}"
+    owner: "{{ zorka_admin }}"
+    group: "{{ zorka_admin_group }}"
+    mode: '0644'

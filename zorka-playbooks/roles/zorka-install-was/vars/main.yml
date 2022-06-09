@@ -1,2 +1,10 @@
 ---
 # vars file for zorka-install-was
+zorka_hostname: BNTNETTIP02-WAS
+zorka_admin: zorkaadmin
+zorka_admin_group: zorkagpg
+was_user: wasadmin
+was_pass: waspasswd
+zabbix_server_addr: 158.98.6.6
+zabbix_listen_port: 10060
+zorka_properties: /opt/IBM/zorka-2.0.1/zorka.properties

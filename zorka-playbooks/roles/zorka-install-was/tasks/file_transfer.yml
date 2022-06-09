@@ -1,4 +1,6 @@
 ---
 # tasks file for zorka-install-was
-- name: Check previous installation
-  include_tasks: pre_req.yml
+- name: Download foo.conf
+  get_url:
+    url:  https://github.com/jitlogic/zorka/releases/download/2.0.1/zorka-2.0.1.zip
+    dest: /opt/IBM/zorka-2.0.1.zip
