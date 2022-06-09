@@ -1,2 +1,11 @@
 ---
 # tasks file for zorka-install-was
+
+- name: Get binary files
+  include_tasks: file_transfer.yml
+
+- name: Zorka Install
+  include_tasks: install.yml
+
+- name: Zorka Configure
+  include_tasks: configure.yml

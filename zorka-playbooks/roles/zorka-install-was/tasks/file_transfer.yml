@@ -1,2 +1,4 @@
 ---
 # tasks file for zorka-install-was
+- name: Check previous installation
+  include_tasks: pre_req.yml
