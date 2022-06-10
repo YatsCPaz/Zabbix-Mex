@@ -1,0 +1,15 @@
+---
+# tasks file for zorka-install-was
+- name: Unarchive a file that is already on the remote machine
+  ansible.builtin.unarchive:
+    src: /opt/IBM/zorka-2.0.1.zip
+    dest: /opt/IBM/
+    remote_src: yes
+
+- name: Change file ownership, group and permissions
+  ansible.builtin.file:
+    path: /opt/IBM/zorka-2.0.1
+    owner: "{{ zorka_admin }}"
+    group: "{{ zorka_admin_group }}"
+    state: directory
+    recurse: yes
