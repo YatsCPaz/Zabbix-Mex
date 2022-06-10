@@ -1,0 +1,27 @@
+---
+- name: Brings permissions to the path
+  file:
+    path: "{{ argsjvm_pathsrc }}"
+    state: directory
+    mode: '0755' 
+
+- name: CopyScriptsByTasks
+  copy:
+    src: "{{ item }}"
+    dest: "{{ argsjvm_pathsrc }}"
+    mode: '0755'
+  loop:
+    - "{{ argsjvm_librarywsadmin }}"
+    - "{{ argsjvm_filepy }}"
+
+- name: ExecuteTasks
+  shell: "{{ argsjvm_patwas }}/wsadmin.sh -lang jython -f {{ argsjvm_filepy }} {{ newvalue }} -user {{ argsjvm_usrname }} -password {{ argsjvm_password }}"
+  args:
+    chdir: "{{ argsjvm_pathsrc }}"
+  register: runscript_output
+
+- name: ShowResults
+  debug:
+    msg: "{{ runscript_output }}"
+    
+...
