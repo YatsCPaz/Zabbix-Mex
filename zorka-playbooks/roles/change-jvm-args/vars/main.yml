@@ -1,0 +1,9 @@
+---
+# vars file for jvmargs
+argsjvm_librarywsadmin: wsadminlib.py
+argsjvm_pathsrc: /tmp/argsjvm
+argsjvm_usrname: wasadmin
+argsjvm_password: PYSREM6fwivpcA3
+argsjvm_patwas: "{{ argsjvm_patwascmd | default('/opt/IBM/WebSphere/AppServer/bin') }}"
+argsjvm_filepy: change_argsjvmwas.py
+newvalue: '-javaagent:/etc/zabbix/zorka-2.0.1/zorka.jar=/etc/zabbix/zorka-2.0.1 -Xverify:none'

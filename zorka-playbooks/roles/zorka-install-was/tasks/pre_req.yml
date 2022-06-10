@@ -1,0 +1,21 @@
+---
+# tasks file for zorka-install-was
+
+- name: Get stats zorka properties
+  ansible.builtin.stat:
+    path: "{{ zorka_properties }}"
+  register: file_st
+
+- name: End Playbook when zorka file already exist
+  block:
+    - name: Task name
+      debug:
+        msg: "The file or directory exists, installation can't continue"
+    - name: Exit playbook
+      meta: end_play
+  when: file_st.stat.exists
+
+- name: Task name
+  debug:
+    msg: "No previous installation, continue installing zorka agent"
+  when: not file_st.stat.exists

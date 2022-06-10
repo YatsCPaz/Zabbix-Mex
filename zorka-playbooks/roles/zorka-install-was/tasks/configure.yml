@@ -1,0 +1,9 @@
+---
+# tasks file for zorka-install-was
+- name: Copy template config file
+  ansible.builtin.template:
+    src: zorka.properties.j2
+    dest: "{{ zorka_properties }}"
+    owner: "{{ zorka_admin }}"
+    group: "{{ zorka_admin_group }}"
+    mode: '0644'
