@@ -1,0 +1,16 @@
+---
+# tasks file for zorka-install-was
+- name: Copy template config file
+  ansible.builtin.template:
+    src: zorka.properties.j2
+    dest: "{{ zorka_properties }}"
+    owner: "{{ zorka_admin }}"
+    group: "{{ zorka_admin_group }}"
+    mode: '0644'
+
+- name: modify JVM arguments
+  ansible.builtin.lineinfile:
+    path: "{{ jboss_path }}/bin/run.conf"
+    regexp: '^(.*){{ jboss_path }}(\d+)m(.*)$'
+    line: '\1Xms${xms}m\3'
+    backrefs: yes
